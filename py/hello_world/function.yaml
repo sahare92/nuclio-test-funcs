@@ -1,6 +1,6 @@
 metadata:
   name: my-my-func
-  annotations: {}
+  namespace: my-namespace
 spec:
   description: ""
   disable: false
@@ -16,6 +16,8 @@ spec:
     dependencies: []
     runtimeAttributes:
       repositories: []
+    commands:
+      - pip install requests
   targetCPU: 75
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 2

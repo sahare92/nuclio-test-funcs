@@ -18,6 +18,6 @@ spec:
       repositories: []
     commands:
       - pip install requests
-  targetCPU: 75
+  targetCPU: 78
   minReplicas: 1
   maxReplicas: 2

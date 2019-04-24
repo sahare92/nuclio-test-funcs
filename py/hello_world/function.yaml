@@ -1,16 +1,20 @@
 metadata:
   name: my-my-func2
   namespace: my-namespace
+  labels:
+    label1: label1_val
 spec:
   description: ""
   disable: false
-  triggers: {}
   env: []
   loggerSinks:
     - level: debug
       sink: ""
   handler: "handler:handler"
   runtime: "python:2.7"
+  env:
+    new_env1: new_env1_val
+    env_var: new_val
   build:
     image: ""
     dependencies: []

@@ -12,9 +12,11 @@ spec:
       sink: ""
   handler: "handler:handler"
   runtime: "python:2.7"
-  # env:
-  #   new_env1: new_env1_val
-  #   env_var: new_val
+  env:
+    - name: new_env1
+      value: new_env1_val
+    - name: env_var
+      value: new_val
   build:
     image: ""
     dependencies: []

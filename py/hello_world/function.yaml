@@ -24,7 +24,6 @@ spec:
       repositories: []
     commands:
       - pip install requests
-      - pip install cv2
   targetCPU: 78
   minReplicas: 1
   maxReplicas: 2

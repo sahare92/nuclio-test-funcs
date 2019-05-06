@@ -7,7 +7,7 @@ metadata:
 spec:
   description: "Description from yaml"
   targetCpu: 0
-  replicas: 0
+  replicas: 1
   loggerSinks:
     - level: debug
   disable: false

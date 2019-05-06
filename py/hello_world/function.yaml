@@ -12,6 +12,7 @@ spec:
       sink: ""
   handler: "handler:handler"
   runtime: "python:2.7"
+  readinessTimeoutSeconds: 20
   env:
     - name: new_env1
       value: new_env1_val

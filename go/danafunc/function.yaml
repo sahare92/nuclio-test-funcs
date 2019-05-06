@@ -1,0 +1,29 @@
+metadata:
+  name: external-dependency-test-func
+  labels:
+    labelyamlkey: labelyamlval
+  annotations:
+    annotationyamlkey: annotationyamlval
+spec:
+  description: "Description from yaml"
+  targetCpu: 0
+  replicas: 0
+  loggerSinks:
+    - level: debug
+  disable: false
+  handler: "main:handler"
+  maxReplicas: 1
+  platform: {}
+  readinessTimeoutSeconds: 60
+  runtime: golang
+  minReplicas: 1
+  resources: {}
+  build:
+    commands:
+      - 'touch /tmp/test_file'
+    runtimeAttributes:
+      repositories: []
+    noCleanup: false
+    noCache: false
+    offline: false
+    baseImage: "golang:1.11.6-alpine3.8"

@@ -1,22 +1,20 @@
 metadata:
-  name: external-dependency-test-func
-  annotations: {}
+  name: hello-demo
 spec:
-  description: ""
+  description: "hello demo, does nothing but returning hello-demo"
   disable: false
-  triggers: {}
+  env: []
   loggerSinks:
     - level: debug
       sink: ""
   handler: "handler:handler"
   runtime: "python:2.7"
+  readinessTimeoutSeconds: 20
   build:
-    commands:
-      - "pip install inflection"
     image: ""
     dependencies: []
     runtimeAttributes:
       repositories: []
-  targetCPU: 75
+  targetCPU: 78
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: 2

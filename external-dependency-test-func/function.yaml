@@ -6,7 +6,7 @@ metadata:
     annotationyamlkey: annotationyamlval
 spec:
   description: "Description from yaml"
-  targetCpu: 0
+  targetCpu: 45
   replicas: 0
   minReplicas: 1
   disable: false

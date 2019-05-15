@@ -1,0 +1,34 @@
+metadata:
+  name: nested-dir-test-func
+  labels:
+    labelyamlkey: labelyamlval
+  annotations:
+    annotationyamlkey: annotationyamlval
+spec:
+  description: "Description from yaml"
+  targetCpu: 0
+  replicas: 0
+  minReplicas: 1
+  disable: false
+  platform: {}
+  loggerSinks:
+    - level: debug
+  handler: "main:Handler"
+  maxReplicas: 1
+  readinessTimeoutSeconds: 70
+  runtime: "golang"
+  env:
+    - type: value
+      name: NAIPI_VAR
+      value: naipi_var
+  resources: {}
+  build:
+    commands:
+      - 'touch /tmp/test_file'
+    image: yamlimagename
+    runtimeAttributes:
+      repositories: []
+    noCleanup: false
+    noCache: false
+    offline: false
+    baseImage: "golang:1.11.6-alpine3.8"

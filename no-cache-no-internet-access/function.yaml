@@ -1,5 +1,5 @@
 metadata:
-  name: external-dependency-test-func
+  name: no-cache-no-internet-access
   labels:
     labelyamlkey: labelyamlval
   annotations:
@@ -29,6 +29,6 @@ spec:
     runtimeAttributes:
       repositories: []
     noCleanup: false
-    noCache: false
-    offline: false
+    noCache: true
+    offline: true
     baseImage: "python:3.6-jessie"

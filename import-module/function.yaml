@@ -1,5 +1,5 @@
 metadata:
-  name: external-dependency-test-func
+  name: import-module
   labels:
     labelyamlkey: labelyamlval
   annotations:

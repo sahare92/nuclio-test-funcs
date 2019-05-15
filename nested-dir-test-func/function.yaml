@@ -13,10 +13,10 @@ spec:
   platform: {}
   loggerSinks:
     - level: debug
-  handler: "main:Handler"
+  handler: "main:handler"
   maxReplicas: 1
-  readinessTimeoutSeconds: 70
-  runtime: "golang"
+  readinessTimeoutSeconds: 60
+  runtime: "python:3.6"
   env:
     - type: value
       name: NAIPI_VAR
@@ -31,4 +31,4 @@ spec:
     noCleanup: false
     noCache: false
     offline: false
-    baseImage: "golang:1.11.6-alpine3.8"
+    baseImage: "python:3.6-jessie"

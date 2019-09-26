@@ -1,0 +1,29 @@
+metadata:
+  labels:
+    nuclio.io/project-name: default
+  name: local-archive
+spec:
+  httpPort: 0
+  imageHash: "1568903465091750036"
+  targetCPU: 75
+  replicas: 1
+  publish: false
+  timeoutSeconds: 0
+  disable: false
+  alias: latest
+  handler: "main:handler2"
+  platform: {}
+  readinessTimeoutSeconds: 150
+  runtime: python
+  resources: {}
+  build:
+    timestamp: 1568303206
+    runtimeAttributes:
+      repositories: []
+    noCleanup: false
+    noCache: false
+    offline: true
+    codeEntryType: image
+    image: ""
+    dependencies: []
+  image: ""

@@ -4,7 +4,25 @@ metadata:
 spec:
   description: ""
   disable: false
-  triggers: {}
+  triggers:
+      myHttpTrigger:
+        attributes:
+          cors:
+            allowMethods:
+            - GET
+            - PATCH
+            - OPTIONS
+            - POST
+            allowOrigins:
+            - '*'
+            enabled: true
+            ingresses:
+              '0':
+                host: cors-func-qzeu.default-tenant.app.dev72.lab.iguazeng.com
+                paths:
+                - /
+                secretName: presto-tls
+              serviceType: ClusterIP
   env: []
   loggerSinks:
     - level: debug
